@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A01-CSharpArrays", "A01-CSharpArrays\A01-CSharpArrays.csproj", "{9490B686-F411-4FB8-86E7-944F3C8E797A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A03_Sets", "A03_Sets\A03_Sets.csproj", "{6A46F331-7333-4360-B028-DAD9B99B0E41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9490B686-F411-4FB8-86E7-944F3C8E797A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9490B686-F411-4FB8-86E7-944F3C8E797A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9490B686-F411-4FB8-86E7-944F3C8E797A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A46F331-7333-4360-B028-DAD9B99B0E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A46F331-7333-4360-B028-DAD9B99B0E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A46F331-7333-4360-B028-DAD9B99B0E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A46F331-7333-4360-B028-DAD9B99B0E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
