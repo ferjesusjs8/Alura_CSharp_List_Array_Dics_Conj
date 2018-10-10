@@ -4,11 +4,21 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using A03_Sets;
 
 namespace A03
 {
-    class Curso
+    public class Curso
     {
+        private ISet<Aluno> alunos = new HashSet<Aluno>();
+        public IList<Aluno> Alunos
+        {
+            get
+            {
+                return new ReadOnlyCollection<Aluno>(alunos.ToList());
+            }
+        }
+
         private IList<Aula> aulas;
 
         public IList<Aula> Aulas
@@ -37,6 +47,10 @@ namespace A03
             set { nome = value; }
         }
 
+        internal void Matricula(Aluno aluno)
+        {
+            alunos.Add(aluno);
+        }
 
         public string Instrutor
         {
@@ -48,15 +62,6 @@ namespace A03
         {
             get
             {
-                //int total = 0;
-                //foreach (var aula in aulas)
-                //{
-                //    total += aula.Tempo;
-                //}
-                //return total;
-
-                //LINQ
-
                 return aulas.Sum(aula => aula.Tempo);
             }
         }
@@ -66,5 +71,9 @@ namespace A03
             return $"Curso: {nome}, Tempo: {TempoTotal}, Aulas: {string.Join(", ", aulas)}";
         }
 
+        public Boolean EstaMatriculado(Aluno aluno)
+        {
+            return Alunos.Contains(aluno);
+        }
     }
 }

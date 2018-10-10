@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace A01_CSharpArrays
+namespace A03
 {
     class Program
     {
